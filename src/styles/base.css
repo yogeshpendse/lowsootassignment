@@ -1,0 +1,24 @@
+:root {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  --black-sidenav: #181a1a;
+  --black-selected: #090909;
+  --black-openselector: #101013;
+  --black-upnav: #282b2a;
+  --black-genralbg: #1e201f;
+  --white-tinge: #fff;
+  --button-toggle: #1b8fd2;
+  --float-bot: #247fb5;
+  --selected-green: #219e5b;
+  --top-navselect: #373737;
+  --hold-red: tomato;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button {
+  border: none;
+  cursor: pointer;
+}

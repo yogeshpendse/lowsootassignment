@@ -1,0 +1,69 @@
+:root {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  --black-sidenav: #181a1a;
+  --black-selected: #090909;
+  --black-openselector: #101013;
+  --black-topnav: #282b2a;
+  --black-genralbg: #1e201f;
+  --black-topnavnname: #373737;
+  --white-tinge: #fff;
+  --button-toggle: #1b8fd2;
+  --float-bot: #247fb5;
+  --selected-green: #219e5b;
+  --top-navselect: #373737;
+  --hold-red: tomato;
+  --alert-red: red;
+  --search-bar: #373737;
+  --black-lightv: #202224;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.dash {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(10%);
+  display: flex;
+  justify-content: flex-start;
+  gap: 8rem;
+  background-color: var(--search-bar);
+  color: beige;
+  padding: 1.4rem 3rem;
+  font-size: 1.8rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+.float {
+  position: absolute;
+  bottom: 2rem;
+  right: 10%;
+}
+.float__item {
+  font-size: 3rem;
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--float-bot);
+  color: var(--white-tinge);
+}
+.float__tag {
+  position: absolute;
+  top: 0;
+  right: -0%;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--alert-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+}

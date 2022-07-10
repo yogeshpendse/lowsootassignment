@@ -1,0 +1,38 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+:root {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  --black-sidenav: #181a1a;
+  --black-selected: #090909;
+  --black-openselector: #101013;
+  --black-upnav: #282b2a;
+  --black-genralbg: #1e201f;
+  --white-tinge: #fff;
+  --button-toggle: #1b8fd2;
+  --float-bot: #247fb5;
+  --selected-green: #219e5b;
+  --top-navselect: #373737;
+  --hold-red: tomato;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container__grid {
+  display: grid;
+  grid-template-columns: 8rem 1fr 1.5fr 1.5fr;
+  grid-template-areas: "cside cmenu cmain cmain";
+}
+.cside {
+  grid-area: cside;
+}
+.cmenu {
+  grid-area: cmenu;
+}
+.cmain {
+  grid-area: cmain;
+  background-color: var(--black-genralbg);
+  position: relative;
+}

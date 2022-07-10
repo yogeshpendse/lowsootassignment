@@ -1,0 +1,62 @@
+:root {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  --black-sidenav: #181a1a;
+  --black-selected: #090909;
+  --black-openselector: #101013;
+  --black-topnav: #282b2a;
+  --black-genralbg: #1e201f;
+  --black-topnavnname: #373737;
+  --white-tinge: #fff;
+  --button-toggle: #1b8fd2;
+  --float-bot: #247fb5;
+  --selected-green: #219e5b;
+  --top-navselect: #373737;
+  --hold-red: tomato;
+  --alert-red: red;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black-sidenav);
+  height: calc(100vh - 7rem);
+}
+.sidebar__primarymenu {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sidebar__button {
+  font-size: 2.4rem;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-tinge);
+  background-color: var(--black-sidenav);
+  position: relative;
+}
+.sidebar__button--selected {
+  background-color: var(--black-openselector);
+}
+.sidebar__hovermessage {
+  position: absolute;
+  font-size: 1.6rem;
+  background-color: black;
+  padding: 0.5rem;
+  width: max-content;
+  left: 110%;
+  z-index: 2;
+  display: none;
+  opacity: 0.8;
+}
+.sidebar__button:hover .sidebar__hovermessage {
+  display: block;
+}
